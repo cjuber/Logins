@@ -1,0 +1,374 @@
+
+//Header and Nav ------------------------
+header{
+    background: grey;
+    height: 10vh;
+    h1{
+        font-size: 50px;
+        padding-top: 2vh;
+    }
+    text-align: center;
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    padding: 0 15px 0 15px;
+    border-right: 1px solid black;
+    font-size: 25px
+}
+.nav{
+    display: flex;
+    padding: 5px 0 5px 2%;
+    border-bottom: 1px solid black;
+}
+
+// end Header and Nav ------------------------
+
+//Login1 ------------------------
+.login1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 86vh;
+    background: #f2f4f8;
+    
+    .authBox{
+        background: white;
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        .inputBox{
+            display: flex;
+            flex-direction: column;
+           margin-top: 1rem;
+            .inputs{
+               border: 1px solid rgba(0, 0, 0, 0.125);
+               border-radius: 0.125rem;
+               box-sizing: border-box;
+               font-size: 1rem;
+               height: 2.25rem;
+               line-height: 1.25rem;
+               margin-top: 1rem;
+             
+               padding: 0.25rem 0.5rem;
+               width: 15rem;
+               transition: all 0.25s; 
+            }
+        }
+        button{
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.125rem;
+            box-sizing: border-box;
+            line-height: 1.25rem;
+            width: 15rem;
+            height: 2.25rem;
+            background: #306191;
+            color: #fafafa;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            padding: 0.25rem 0.5rem;
+            outline: 1px dashed transparent;
+            outline-offset: 2px;
+            padding-left: 0;
+            
+            transition: all 0.25s; 
+        }
+        button:hover{
+            background: #306191 * 0.85;
+        }
+        button:active{
+            background: #306191 * 1.15;
+            transition: all 0.125s;
+        }
+        .circle{
+            height: 150px;
+            width: 150px;
+            background: #306191 * 1.15;
+            border-radius: 90px;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            z-index: 1;
+            
+        }
+        
+      
+    }
+}
+//end Login1 ------------------------
+
+//Login2 ------------------------
+.login2{
+    background:#59ABE3;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    .inputBox {
+        width:340px;
+        height:320px;
+        background:#e6e6e6;
+        border-radius:8px;
+        box-shadow:0 0 40px -10px #000;
+        margin-top: 20vh;
+        padding:20px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family:'Montserrat',sans-serif;
+        position:relative;
+        h1{
+            margin:10px 0;
+            padding-bottom:10px;
+            width:130px;
+            color:#78788c;
+            border-bottom:3px solid #78788c; 
+            font-size: 20px;
+        }
+        .inputs{
+            width:100%;
+            padding:10px;
+            margin-top: 3rem;
+            box-sizing:border-box;
+            background:none;
+            outline:none;
+            resize:none;
+            border:0;
+            font-family:'Montserrat',sans-serif;
+            transition:all .3s;
+            border-bottom: 2px solid #bebed2;
+        }
+        .inputs:focus{
+            border-bottom: 2px solid #78788c;
+        }
+    }
+    button{
+        width: 75%;
+        padding:8px 12px;
+        margin:8px 0 0 12.5%;
+        font-family:'Montserrat',sans-serif;
+        //border:2px solid #78788c;
+        border: none;
+        background: #50505a;
+        border-radius:6px;
+        padding:10px 0 10px 0;
+        cursor:pointer;
+        transition:all .3s;
+        font-size: 19px;
+        color: #59ABE3;
+        position:absolute;
+        bottom:-15px;
+        right:-20px;
+        box-shadow:10px 10px 40px -14px #000;
+    }
+    .buttonFloat:hover{
+        background:#78788c;
+        color:#fff;
+    }
+    /*.buttonFloat{
+        
+        position:absolute;
+        bottom:-15px;
+        right:-20px;
+        background:#50505a;
+        color:#fff;
+        width:150px;
+        padding:5px 0 10px 0;
+        border-radius:6px;
+        font-size:13px;
+        box-shadow:10px 10px 40px -14px #000;
+    }*/
+span{margin:0 5px 0 15px
+    }
+}
+//end Login2 ------------------------
+
+
+//Login3 ------------------------
+.login3{
+    background-color: #eee;
+  font-family: Verdana;
+  display: flex;
+  justify-content: center;
+  height: 86vh;
+  .inputBox{
+      width: 400px;
+      height: 190px;
+      background: white;
+      margin-top: 250px;
+      border-radius: 2px;
+      box-shadow: 0px 3px 3px silver;
+      padding: 25px;
+      h1 {
+        margin: 0 0 20px 0; 
+        font-weight: normal;
+        color: #03a9f4;
+        font-size: 30px;
+      }
+      h2{
+        float: left;
+        padding: 10px 10px 14px 0;
+        width: 175px;
+        margin-top: 10px;
+        clear: left;
+      }
+      input {
+        float: right;
+        border: 2px solid silver;
+        padding: 8px 0;
+        border-width: 0 0 2px 0;
+        width: 200px;
+        margin-top: 15px;
+        transition: border-color .3s;
+        &:focus, &:hover {
+            border-color: #03a9f4;
+            outline: 0;
+            
+            transform: scale(1.1);
+            transition: transform .15s ease;
+        }
+      }
+      button{
+        border: 0;
+        background-color: white;
+        color: #03a9f4;
+        text-transform: uppercase;
+        width: auto;
+        cursor: pointer;
+        margin-top: 1.5rem;
+        float: right;
+      }
+  }
+}
+//end Login3 ------------------------
+
+
+//Login4 ------------------------
+.login4{
+    @import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+    $color: #DC6180;
+    //$color: rgb(147, 147, 209);
+    perspective:800px;
+    height: 86.2vh;
+    margin:0;
+    overflow: hidden;
+    font-family: 'Gudea', sans-serif;
+    background: $color;
+    display: flex;
+    justify-content: center;
+    .authBox{
+        height: 300px;
+        width: 240px;
+        background: #242734;
+        padding:100px 40px 40px 40px;
+        margin-top: 10%;
+        box-shadow: 3px 3px 15px  black;
+        h1{
+            color: $color;
+            height:60px;
+            text-align:left;
+            font-size:16px;
+            
+        }
+        input{
+            height: 20px;
+            width: 100%;
+            color: white;
+            background: #242734;
+            border-top: none;
+            border-bottom: 1px solid $color;
+            border-right: none;
+            border-left: none;
+            margin-bottom: 2rem;
+            
+        }
+        input:focus {
+            outline: none;
+            transform: scale(1.1);
+            transition: transform .15s ease;
+        }
+       
+        input::placeholder{
+            color: rgb(112, 102, 112);
+        }
+        button{
+            margin-top: 2rem;
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            background: none;
+            border: 2px solid $color;
+            color: $color;
+        }
+    }
+    
+    
+}
+//end Login4 ------------------------
+
+
+//Login5 ------------------------
+$left-color:  #242e4d;
+$right-color: #897e79;
+$green-dark:  #35c3c1;
+$green-light: #00d6b7;
+$gray:        #8f8f8f;
+$gray-light:  #f5f6f8;
+.login5{
+    background: linear-gradient(135deg,rgba($left-color,.9),rgba($right-color, .9));
+    height: 86.2vh;
+    display: flex;
+    justify-content: center;
+    .authBox{
+        
+        width: 20vw;
+        height: 25vh;
+        margin-top: 25vh;
+        background: rgba(black, .15);
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        border-top: 3px solid $green-light;
+        box-shadow: 3px 3px 15px black;
+        input{
+            height: 50px;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        input:focus{
+            outline: none;
+            transform: scale(1.1);
+            transition: transform .15s ease;
+            background: $gray-light;
+        }
+        button{
+            background: linear-gradient(to right, $green-dark, $green-light);    
+            height: 50px;
+            margin-top: 1.5rem;
+            border: none;
+            font-size: 2rem;
+            color: $gray-light;
+        }
+    }
+}
+//end Login5 ------------------------
+//Login6 ------------------------
+//end Login6 ------------------------
+//Login7 ------------------------
+//end Login7 ------------------------
+//Login8 ------------------------
+//end Login8 ------------------------
+//Login9 ------------------------
+//end Login9 ------------------------
+//Login10 ------------------------
+//end Login10 ------------------------
+//Login11 ------------------------
+//end Login11 ------------------------
+//Login12 ------------------------
+//end Login12 ------------------------
+//Login13 ------------------------
+//end Login13 ------------------------
+//Login14 ------------------------
+//end Login14 ------------------------

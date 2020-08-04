@@ -1,0 +1,496 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+@import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 760px) {
+  header {
+    background: grey;
+    height: 10vh;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 50px;
+    padding-top: 2vh;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+    padding: 0 15px 0 15px;
+    border-right: 1px solid black;
+    font-size: 25px;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 0 5px 2%;
+    border-bottom: 1px solid black;
+  }
+  .login1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 86vh;
+    background: #f2f4f8;
+  }
+  .login1 .authBox {
+    background: white;
+    margin-top: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .login1 .authBox .inputBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
+  }
+  .login1 .authBox .inputBox .inputs {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.125rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 1rem;
+    height: 2.25rem;
+    line-height: 1.25rem;
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    width: 15rem;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .login1 .authBox button {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.125rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    line-height: 1.25rem;
+    width: 15rem;
+    height: 2.25rem;
+    background: #306191;
+    color: #fafafa;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 0.25rem 0.5rem;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    padding-left: 0;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .login1 .authBox button:hover {
+    background: #29527b;
+  }
+  .login1 .authBox button:active {
+    background: #3770a7;
+    -webkit-transition: all 0.125s;
+    transition: all 0.125s;
+  }
+  .login1 .authBox .circle {
+    height: 150px;
+    width: 150px;
+    background: #3770a7;
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    z-index: 1;
+  }
+  .login2 {
+    background: #59ABE3;
+    height: 86vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*.buttonFloat{
+        
+        position:absolute;
+        bottom:-15px;
+        right:-20px;
+        background:#50505a;
+        color:#fff;
+        width:150px;
+        padding:5px 0 10px 0;
+        border-radius:6px;
+        font-size:13px;
+        box-shadow:10px 10px 40px -14px #000;
+    }*/
+  }
+  .login2 .inputBox {
+    width: 340px;
+    height: 320px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 40px -10px #000;
+            box-shadow: 0 0 40px -10px #000;
+    margin-top: 20vh;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    position: relative;
+  }
+  .login2 .inputBox h1 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 130px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+    font-size: 20px;
+  }
+  .login2 .inputBox .inputs {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2;
+  }
+  .login2 .inputBox .inputs:focus {
+    border-bottom: 2px solid #78788c;
+  }
+  .login2 button {
+    width: 75%;
+    padding: 8px 12px;
+    margin: 8px 0 0 12.5%;
+    font-family: 'Montserrat',sans-serif;
+    border: none;
+    background: #50505a;
+    border-radius: 6px;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    font-size: 19px;
+    color: #59ABE3;
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    -webkit-box-shadow: 10px 10px 40px -14px #000;
+            box-shadow: 10px 10px 40px -14px #000;
+  }
+  .login2 .buttonFloat:hover {
+    background: #78788c;
+    color: #fff;
+  }
+  .login2 span {
+    margin: 0 5px 0 15px;
+  }
+  .login3 {
+    background-color: #eee;
+    font-family: Verdana;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 86vh;
+  }
+  .login3 .inputBox {
+    width: 400px;
+    height: 190px;
+    background: white;
+    margin-top: 250px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 3px 3px silver;
+            box-shadow: 0px 3px 3px silver;
+    padding: 25px;
+  }
+  .login3 .inputBox h1 {
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    color: #03a9f4;
+    font-size: 30px;
+  }
+  .login3 .inputBox h2 {
+    float: left;
+    padding: 10px 10px 14px 0;
+    width: 175px;
+    margin-top: 10px;
+    clear: left;
+  }
+  .login3 .inputBox input {
+    float: right;
+    border: 2px solid silver;
+    padding: 8px 0;
+    border-width: 0 0 2px 0;
+    width: 200px;
+    margin-top: 15px;
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+  }
+  .login3 .inputBox input:focus, .login3 .inputBox input:hover {
+    border-color: #03a9f4;
+    outline: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
+  }
+  .login3 .inputBox button {
+    border: 0;
+    background-color: white;
+    color: #03a9f4;
+    text-transform: uppercase;
+    width: auto;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    float: right;
+  }
+  .login4 {
+    -webkit-perspective: 800px;
+            perspective: 800px;
+    height: 86.2vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Gudea', sans-serif;
+    background: #DC6180;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .login4 .authBox {
+    height: 300px;
+    width: 240px;
+    background: #242734;
+    padding: 100px 40px 40px 40px;
+    margin-top: 10%;
+    -webkit-box-shadow: 3px 3px 15px  black;
+            box-shadow: 3px 3px 15px  black;
+  }
+  .login4 .authBox h1 {
+    color: #DC6180;
+    height: 60px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .login4 .authBox input {
+    height: 20px;
+    width: 100%;
+    color: white;
+    background: #242734;
+    border-top: none;
+    border-bottom: 1px solid #DC6180;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2rem;
+  }
+  .login4 .authBox input:focus {
+    outline: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
+  }
+  .login4 .authBox input::-webkit-input-placeholder {
+    color: #706670;
+  }
+  .login4 .authBox input:-ms-input-placeholder {
+    color: #706670;
+  }
+  .login4 .authBox input::-ms-input-placeholder {
+    color: #706670;
+  }
+  .login4 .authBox input::placeholder {
+    color: #706670;
+  }
+  .login4 .authBox button {
+    margin-top: 2rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid #DC6180;
+    color: #DC6180;
+  }
+  .login5 {
+    background: linear-gradient(135deg, rgba(36, 46, 77, 0.9), rgba(137, 126, 121, 0.9));
+    height: 86.2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .login5 .authBox {
+    width: 20vw;
+    height: 25vh;
+    margin-top: 25vh;
+    background: rgba(0, 0, 0, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2%;
+    border-top: 3px solid #00d6b7;
+    -webkit-box-shadow: 3px 3px 15px black;
+            box-shadow: 3px 3px 15px black;
+  }
+  .login5 .authBox input {
+    height: 50px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  .login5 .authBox input:focus {
+    outline: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
+    background: #f5f6f8;
+  }
+  .login5 .authBox button {
+    background: -webkit-gradient(linear, left top, right top, from(#35c3c1), to(#00d6b7));
+    background: linear-gradient(to right, #35c3c1, #00d6b7);
+    height: 50px;
+    margin-top: 1.5rem;
+    border: none;
+    font-size: 2rem;
+    color: #f5f6f8;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
