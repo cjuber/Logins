@@ -16,6 +16,7 @@ export default class Login6 extends Component {
                     <label >PASSWORD</label>
                     <input className='inputs' type='password' name='password' ></input>
                     <button>Login</button>
+                    <a href='#/6'>Forgot Password?</a>
                 </div>
             </div>
         )
