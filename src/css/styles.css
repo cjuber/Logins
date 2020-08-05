@@ -648,6 +648,7 @@ input, select {
     border-radius: 5px;
     margin-bottom: 1rem;
     height: 3rem;
+    outline: 1px dashed transparent;
   }
   .login7 .authBox input::-webkit-input-placeholder {
     color: #919FAF;
@@ -660,6 +661,9 @@ input, select {
   }
   .login7 .authBox input::placeholder {
     color: #919FAF;
+  }
+  .login7 .authBox input:focus {
+    border-bottom: 2px solid #2CB0C5;
   }
   .login7 .authBox button {
     background: #2CB0C5;
@@ -694,6 +698,16 @@ input, select {
     -webkit-box-shadow: 1px 1px 5px black;
             box-shadow: 1px 1px 5px black;
   }
+  .login8 .triangle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 200px solid #a5aae4;
+    border-bottom: 150px solid transparent;
+    position: absolute;
+    top: 30rem;
+    right: 48rem;
+  }
   .login8 .authBox {
     position: absolute;
     display: -webkit-box;
@@ -718,6 +732,13 @@ input, select {
     height: 30px;
     margin-bottom: 1rem;
     padding-left: 6%;
+    outline: 1px dashed transparent;
+    border: 1px solid #5356AD;
+  }
+  .login8 .authBox input:focus {
+    border-bottom: 1px solid #FB72B2;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .login8 .authBox button {
     height: 40px;
@@ -727,6 +748,11 @@ input, select {
     color: #fff;
     font-size: 16px;
     padding: 10px;
+    outline: 1px dashed transparent;
+  }
+  .login8 .authBox button:active {
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@ export default class Login8 extends Component {
         return (
             <div className='login8'>
                 <div className='lowerBox'></div>
+                <div className='triangle'></div>
             <div className='authBox'>
                  
                  <input className='inputs' name='username' placeholder='Username'></input>
