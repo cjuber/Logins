@@ -285,6 +285,7 @@ input, select {
     margin: 8px 0 0 12.5%;
     font-family: 'Montserrat',sans-serif;
     border: none;
+    outline: 1px dashed transparent;
     background: #50505a;
     border-radius: 6px;
     padding: 10px 0 10px 0;
@@ -299,9 +300,12 @@ input, select {
     -webkit-box-shadow: 10px 10px 40px -14px #000;
             box-shadow: 10px 10px 40px -14px #000;
   }
-  .login2 .buttonFloat:hover {
+  .login2 button:hover {
     background: #78788c;
     color: #fff;
+  }
+  .login2 button:active {
+    border: 1px solid white;
   }
   .login2 span {
     margin: 0 5px 0 15px;
@@ -369,6 +373,15 @@ input, select {
     cursor: pointer;
     margin-top: 1.5rem;
     float: right;
+    outline: 1px dashed transparent;
+  }
+  .login3 .inputBox button:active {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
   }
   .login4 {
     -webkit-perspective: 800px;
@@ -440,6 +453,10 @@ input, select {
     background: none;
     border: 2px solid #DC6180;
     color: #DC6180;
+    outline: 1px dashed transparent;
+  }
+  .login4 .authBox button:active {
+    border: 3px solid #ff92c0;
   }
   .login5 {
     background: linear-gradient(135deg, rgba(36, 46, 77, 0.9), rgba(137, 126, 121, 0.9));
@@ -491,6 +508,93 @@ input, select {
     border: none;
     font-size: 2rem;
     color: #f5f6f8;
+    outline: 1px dashed transparent;
+  }
+  .login5 .authBox button:active {
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
+  }
+  .login6 {
+    font-family: 'Open Sans', sans-serif;
+    background: #C8C8C8;
+    height: 86.2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .login6 .authBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: auto;
+    max-width: 350px;
+    min-height: 600px;
+    position: relative;
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 100px;
+    background: rgba(40, 57, 101, 0.9);
+    padding: 0 2% 0 2%;
+    border-radius: 10px;
+  }
+  .login6 .authBox input {
+    margin-bottom: 15px;
+    background: #757B94;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    height: 35px;
+    outline: 1px dashed transparent;
+  }
+  .login6 .authBox input:focus, .login6 .authBox :hover {
+    border-bottom: 2px solid #1059FF;
+  }
+  .login6 .authBox label {
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    border: none;
+  }
+  .login6 .authBox label:hover {
+    border: none;
+  }
+  .login6 .authBox button {
+    border-radius: 50px;
+    height: 35px;
+    background: #2E61ED;
+    border: none;
+    outline: 1px dashed transparent;
+    margin-top: 2rem;
+    color: #fff;
+  }
+  .login6 .authBox button:active {
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
+  }
+  .login6 .authBox .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+  }
+  .login6 .authBox .toggle h1 {
+    font-size: 25px;
+    margin: 80px 50px 50px 0;
+    padding-bottom: 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #1059FF;
+  }
+  .login6 .authBox .toggle .inactive {
+    color: #bfbfbf;
+    border: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

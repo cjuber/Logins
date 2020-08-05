@@ -24,7 +24,8 @@ header{
     border-bottom: 1px solid black;
 }
 
-// end Header and Nav ------------------------
+// end Header and Nav -----------------------------------------------------------------------------------------------------------------------------------------
+
 
 //Login1 ------------------------
 .login1{
@@ -99,7 +100,8 @@ header{
       
     }
 }
-//end Login1 ------------------------
+//end Login1 -----------------------------------------------------------------------------------------------------------------------------------------
+
 
 //Login2 ------------------------
 .login2{
@@ -151,6 +153,7 @@ header{
         font-family:'Montserrat',sans-serif;
         //border:2px solid #78788c;
         border: none;
+        outline: 1px dashed transparent;
         background: #50505a;
         border-radius:6px;
         padding:10px 0 10px 0;
@@ -162,10 +165,15 @@ header{
         bottom:-15px;
         right:-20px;
         box-shadow:10px 10px 40px -14px #000;
+        
     }
-    .buttonFloat:hover{
+    button:hover{
         background:#78788c;
         color:#fff;
+    }
+    button:active{
+        border: 1px solid white;
+
     }
     /*.buttonFloat{
         
@@ -183,7 +191,7 @@ header{
 span{margin:0 5px 0 15px
     }
 }
-//end Login2 ------------------------
+//end Login2 -----------------------------------------------------------------------------------------------------------------------------------------
 
 
 //Login3 ------------------------
@@ -239,10 +247,16 @@ span{margin:0 5px 0 15px
         cursor: pointer;
         margin-top: 1.5rem;
         float: right;
+        outline: 1px dashed transparent;
+      }
+      button:active{
+         transform: translate(3px,3px);
+        //transform: scale(1.1);
+        transition: transform .15s ease;
       }
   }
 }
-//end Login3 ------------------------
+//end Login3 -----------------------------------------------------------------------------------------------------------------------------------------
 
 
 //Login4 ------------------------
@@ -250,6 +264,7 @@ span{margin:0 5px 0 15px
     @import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
     $color: #DC6180;
     //$color: rgb(147, 147, 209);
+    //$color: pink;
     perspective:800px;
     height: 86.2vh;
     margin:0;
@@ -301,12 +316,16 @@ span{margin:0 5px 0 15px
             background: none;
             border: 2px solid $color;
             color: $color;
+            outline: 1px dashed transparent;
+        }
+        button:active{
+            border: 3px solid $color * 1.5;
         }
     }
     
     
 }
-//end Login4 ------------------------
+//end Login4 -----------------------------------------------------------------------------------------------------------------------------------------
 
 
 //Login5 ------------------------
@@ -350,11 +369,86 @@ $gray-light:  #f5f6f8;
             border: none;
             font-size: 2rem;
             color: $gray-light;
+            outline: 1px dashed transparent;
+        }
+        button:active{
+            transform: translate(-3px,3px);
+
         }
     }
 }
-//end Login5 ------------------------
+//end Login5 -----------------------------------------------------------------------------------------------------------------------------------------
+
+
 //Login6 ------------------------
+.login6{
+    font-family: 'Open Sans', sans-serif;
+    background: #C8C8C8;
+    height: 86.2vh;
+    display: flex;
+    justify-content: center;
+    .authBox{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin:auto;
+        max-width:350px;
+        min-height:600px;
+        position:relative;
+        box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+        margin-top: 100px;
+        background:rgba(40,57,101,.9);
+        padding: 0 2% 0 2%;
+        border-radius: 10px;
+        input{
+            margin-bottom: 15px;
+            background: #757B94;
+            color:#fff;
+            border: none;
+            border-radius: 50px;
+            height: 35px;
+            outline: 1px dashed transparent;
+        }
+        input:focus, :hover {
+            border-bottom: 2px solid #1059FF;
+        }
+        label{
+            font-size: 16px;
+            color: #fff;
+            padding: 10px;
+            border: none;
+        }
+        label:hover{border: none;}
+        button{
+            border-radius: 50px;
+            height: 35px;
+            background: #2E61ED;
+            border: none;
+            outline: 1px dashed transparent;
+            margin-top: 2rem;
+            color: #fff;
+        }
+        button:active{
+            transform: translate(-3px, 3px);
+        }
+        .toggle{
+            display: flex;
+            border: none;
+            h1{
+                font-size: 25px;
+                margin: 80px 50px 50px 0;
+                padding-bottom: 10px;
+                color: #ffffff;
+                border-bottom: 2px solid #1059FF;
+                
+            }
+            .inactive{
+                color: #fff * 0.75;
+                border: none;
+            }
+        }
+    }
+}
 //end Login6 ------------------------
 //Login7 ------------------------
 //end Login7 ------------------------
