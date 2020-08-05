@@ -520,7 +520,50 @@ $gray-light:  #f5f6f8;
     }
 }
 //end Login7 -----------------------------------------------------------------------------------------------------------------------------------------
+
+
 //Login8 ------------------------
+.login8{
+    display: flex;
+    justify-content: center;
+    background: #5356AD;
+    height: 86.2vh;
+    .lowerBox{
+        width: 35rem;
+        height: 20rem;
+        background: #999EDE;
+        margin: 290px 20px 0 0;
+        box-shadow: 1px 1px 5px black;
+    }
+    .authBox{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 250px 200px 0 0;
+        background: #fff;
+        height: 20rem;
+        width: 15rem;
+        padding: 2%;
+        box-shadow: 1px 1px 5px black;
+        input{
+            height: 30px;
+            margin-bottom: 1rem;
+            padding-left: 6%;
+        }
+        button{
+            height: 40px;
+            width: 25%;
+            background: #FB72B2;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            
+        }
+
+    }
+}
 //end Login8 -----------------------------------------------------------------------------------------------------------------------------------------
 //Login9 ------------------------
 //end Login9 -----------------------------------------------------------------------------------------------------------------------------------------

@@ -4,6 +4,7 @@ export default class Login5 extends Component {
     render() {
         return (
             <div className='login5'>
+                
                <div className='authBox'>
                     
                     <input className='inputs' name='username' placeholder='Username'></input>
