@@ -34,7 +34,31 @@ header{
     flex-direction: column;
     height: 86vh;
     background: #f2f4f8;
-    
+    .tabs{
+        display: flex;
+        position: absolute;
+        top: 14rem;
+    }
+    .tabButtonA{
+        width: 8.5rem;
+        height: 3rem;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.125rem;
+        box-sizing: border-box;
+        background: #306191;
+            color: #fafafa;
+            outline: 1px dashed transparent;
+    }
+    .tabButtonI{
+        width: 8.5rem;
+        height: 3rem;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.125rem;
+        box-sizing: border-box;
+        background: #919aa3;
+            color: #fafafa;
+            outline: 1px dashed transparent;
+    }
     .authBox{
         background: white;
         margin-top: 15vh;
@@ -43,6 +67,7 @@ header{
         align-items: center;
         padding: 1rem;
         border: 1px solid rgba(0, 0, 0, 0.125);
+        
         .inputBox{
             display: flex;
             flex-direction: column;
@@ -60,6 +85,9 @@ header{
                width: 15rem;
                transition: all 0.25s; 
             }
+            .inputNo{
+                display: none;
+            }
         }
         button{
             border: 1px solid rgba(0, 0, 0, 0.125);
@@ -73,6 +101,7 @@ header{
             font-size: 0.75rem;
             font-weight: bold;
             margin-top: 2rem;
+            margin-bottom: 1.5rem;
             padding: 0.25rem 0.5rem;
             outline: 1px dashed transparent;
             outline-offset: 2px;
@@ -86,6 +115,7 @@ header{
         button:active{
             background: #306191 * 1.15;
             transition: all 0.125s;
+            
         }
         .circle{
             height: 150px;
@@ -96,7 +126,15 @@ header{
             z-index: 1;
             
         }
-        
+        .aF{
+            margin-bottom: 1.5rem;
+            text-decoration: none;
+            color: #306191;
+            
+        }
+        .aT{
+            display: none;
+        }
       
     }
 }

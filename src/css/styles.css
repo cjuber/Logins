@@ -139,6 +139,35 @@ input, select {
     height: 86vh;
     background: #f2f4f8;
   }
+  .login1 .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 14rem;
+  }
+  .login1 .tabButtonA {
+    width: 8.5rem;
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.125rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #306191;
+    color: #fafafa;
+    outline: 1px dashed transparent;
+  }
+  .login1 .tabButtonI {
+    width: 8.5rem;
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.125rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #919aa3;
+    color: #fafafa;
+    outline: 1px dashed transparent;
+  }
   .login1 .authBox {
     background: white;
     margin-top: 15vh;
@@ -179,6 +208,9 @@ input, select {
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
+  .login1 .authBox .inputBox .inputNo {
+    display: none;
+  }
   .login1 .authBox button {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.125rem;
@@ -192,6 +224,7 @@ input, select {
     font-size: 0.75rem;
     font-weight: bold;
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0.25rem 0.5rem;
     outline: 1px dashed transparent;
     outline-offset: 2px;
@@ -214,6 +247,14 @@ input, select {
     border-radius: 90px;
     border: 1px solid rgba(0, 0, 0, 0.125);
     z-index: 1;
+  }
+  .login1 .authBox .aF {
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #306191;
+  }
+  .login1 .authBox .aT {
+    display: none;
   }
   .login2 {
     background: #59ABE3;
