@@ -294,18 +294,35 @@ input, select {
     font-family: 'Montserrat',sans-serif;
     position: relative;
   }
-  .login2 .inputBox h1 {
-    margin: 10px 0;
+  .login2 .inputBox .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login2 .inputBox .tabButtonA {
+    margin: 10px;
     padding-bottom: 10px;
     width: 130px;
     color: #78788c;
     border-bottom: 3px solid #78788c;
+    border-right: 3px solid #78788c;
     font-size: 20px;
+    cursor: pointer;
+  }
+  .login2 .inputBox .tabButtonI {
+    margin: 10px;
+    padding-bottom: 10px;
+    width: 130px;
+    color: #b4b4be;
+    border-bottom: 3px solid #b4b4be;
+    border-right: 3px solid #b4b4be;
+    font-size: 20px;
+    cursor: pointer;
   }
   .login2 .inputBox .inputs {
     width: 100%;
     padding: 10px;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background: none;
@@ -319,6 +336,9 @@ input, select {
   }
   .login2 .inputBox .inputs:focus {
     border-bottom: 2px solid #78788c;
+  }
+  .login2 .inputBox .inputNo {
+    display: none;
   }
   .login2 button {
     width: 75%;
