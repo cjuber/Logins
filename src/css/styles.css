@@ -156,6 +156,8 @@ input, select {
     background: #306191;
     color: #fafafa;
     outline: 1px dashed transparent;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
   }
   .login1 .tabButtonI {
     width: 8.5rem;
@@ -167,6 +169,7 @@ input, select {
     background: #919aa3;
     color: #fafafa;
     outline: 1px dashed transparent;
+    cursor: pointer;
   }
   .login1 .authBox {
     background: white;
@@ -240,14 +243,6 @@ input, select {
     -webkit-transition: all 0.125s;
     transition: all 0.125s;
   }
-  .login1 .authBox .circle {
-    height: 150px;
-    width: 150px;
-    background: #3770a7;
-    border-radius: 90px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    z-index: 1;
-  }
   .login1 .authBox .aF {
     margin-bottom: 1.5rem;
     text-decoration: none;
@@ -265,19 +260,6 @@ input, select {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /*.buttonFloat{
-        
-        position:absolute;
-        bottom:-15px;
-        right:-20px;
-        background:#50505a;
-        color:#fff;
-        width:150px;
-        padding:5px 0 10px 0;
-        border-radius:6px;
-        font-size:13px;
-        box-shadow:10px 10px 40px -14px #000;
-    }*/
   }
   .login2 .inputBox {
     width: 340px;
@@ -307,7 +289,8 @@ input, select {
     border-bottom: 3px solid #78788c;
     border-right: 3px solid #78788c;
     font-size: 20px;
-    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .login2 .inputBox .tabButtonI {
     margin: 10px;
@@ -384,7 +367,7 @@ input, select {
   }
   .login3 .inputBox {
     width: 400px;
-    height: 190px;
+    height: 240px;
     background: white;
     margin-top: 250px;
     border-radius: 2px;
@@ -392,20 +375,40 @@ input, select {
             box-shadow: 0px 3px 3px silver;
     padding: 25px;
   }
-  .login3 .inputBox h1 {
-    margin: 0 0 20px 0;
+  .login3 .inputBox .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login3 .inputBox .tabButtonA {
+    margin: 0 86px 20px 0;
     font-weight: normal;
     color: #03a9f4;
+    border-bottom: 3px solid #03a9f4;
+    padding-bottom: 10px;
     font-size: 30px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
   }
-  .login3 .inputBox h2 {
+  .login3 .inputBox .tabButtonI {
+    margin: 0 86px 20px 0;
+    font-weight: normal;
+    color: #a2aaad;
+    border-bottom: 3px solid #a2aaad;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .login3 .inputBox .labelA {
     float: left;
     padding: 10px 10px 14px 0;
     width: 175px;
     margin-top: 10px;
     clear: left;
   }
-  .login3 .inputBox input {
+  .login3 .inputBox .labelI {
+    display: none;
+  }
+  .login3 .inputBox .inputs {
     float: right;
     border: 2px solid silver;
     padding: 8px 0;
@@ -415,7 +418,7 @@ input, select {
     -webkit-transition: border-color .3s;
     transition: border-color .3s;
   }
-  .login3 .inputBox input:focus, .login3 .inputBox input:hover {
+  .login3 .inputBox .inputs:focus, .login3 .inputBox .inputs:hover {
     border-color: #03a9f4;
     outline: 0;
     -webkit-transform: scale(1.1);
@@ -424,6 +427,9 @@ input, select {
     transition: -webkit-transform .15s ease;
     transition: transform .15s ease;
     transition: transform .15s ease, -webkit-transform .15s ease;
+  }
+  .login3 .inputBox .inputNo {
+    display: none;
   }
   .login3 .inputBox button {
     border: 0;
@@ -435,6 +441,8 @@ input, select {
     margin-top: 1.5rem;
     float: right;
     outline: 1px dashed transparent;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
   .login3 .inputBox button:active {
     -webkit-transform: translate(3px, 3px);
