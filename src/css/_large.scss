@@ -352,14 +352,28 @@ span{margin:0 5px 0 15px
         padding:100px 40px 40px 40px;
         margin-top: 10%;
         box-shadow: 3px 3px 15px  black;
-        h1{
+        .tabs{
+            display: flex;
+        }
+        .tabButtonA{
             color: $color;
             height:60px;
             text-align:left;
             font-size:16px;
+            margin-right: 25px;
+            transition: all 0.5s ease;
             
         }
-        input{
+        .tabButtonI{
+            color: rgb(160, 148, 148);
+            height:60px;
+            text-align:left;
+            font-size:16px;
+            margin-right: 25px;
+            cursor: pointer;
+            
+        }
+        .inputs{
             height: 20px;
             width: 100%;
             color: white;
@@ -370,6 +384,9 @@ span{margin:0 5px 0 15px
             border-left: none;
             margin-bottom: 2rem;
             
+        }
+        .inputNo{
+            display: none;
         }
         input:focus {
             outline: none;
