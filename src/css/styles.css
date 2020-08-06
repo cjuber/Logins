@@ -5,6 +5,7 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
 */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -103,27 +104,35 @@ input, select {
 
 @media only screen and (min-width: 760px) {
   header {
-    background: grey;
+    background: #50505A;
     height: 10vh;
     text-align: center;
+    border-bottom: 2px solid #B4B4BE;
   }
   header h1 {
     font-size: 50px;
+    font-family: 'Roboto', sans-serif;
     padding-top: 2vh;
+    color: #B4B4BE;
   }
   .link {
     text-decoration: none;
     color: black;
-    padding: 0 15px 0 15px;
-    border-right: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    border-right: 1px solid #B4B4BE;
+    border-left: 1px solid #B4B4BE;
     font-size: 25px;
   }
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 5px 0 5px 2%;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #B4B4BE;
+    font-family: 'Roboto', sans-serif;
+    background: #50505A;
+  }
+  .nav h1 {
+    color: #B4B4BE;
   }
   .login1 {
     display: -webkit-box;
@@ -144,7 +153,7 @@ input, select {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 14rem;
+    top: 15rem;
   }
   .login1 .tabButtonA {
     width: 8.5rem;

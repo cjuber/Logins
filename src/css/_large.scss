@@ -1,27 +1,37 @@
 
 //Header and Nav ------------------------
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
 header{
-    background: grey;
+    background: #50505A;
     height: 10vh;
     h1{
         font-size: 50px;
+        font-family: 'Roboto', sans-serif;
         padding-top: 2vh;
+        color: #B4B4BE;
     }
     text-align: center;
+    border-bottom: 2px solid #B4B4BE;
 
 }
 
 .link{
     text-decoration: none;
     color: black;
-    padding: 0 15px 0 15px;
-    border-right: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    border-right: 1px solid #B4B4BE;
+    border-left: 1px solid #B4B4BE;
     font-size: 25px
 }
 .nav{
     display: flex;
-    padding: 5px 0 5px 2%;
-    border-bottom: 1px solid black;
+    //padding: 2px 0 2px 2%;
+    border-bottom: 3px solid #B4B4BE;
+    font-family: 'Roboto', sans-serif;
+    background: #50505A;
+    h1{
+        color: #B4B4BE;
+    }
 }
 
 // end Header and Nav -----------------------------------------------------------------------------------------------------------------------------------------
@@ -37,7 +47,7 @@ header{
     .tabs{
         display: flex;
         position: absolute;
-        top: 14rem;
+        top: 15rem;
     }
     .tabButtonA{
         width: 8.5rem;
@@ -46,9 +56,9 @@ header{
         border-radius: 0.125rem;
         box-sizing: border-box;
         background: #306191;
-            color: #fafafa;
-            outline: 1px dashed transparent;
-            transition: all .8s ease;
+        color: #fafafa;
+        outline: 1px dashed transparent;
+        transition: all .8s ease;
     }
     .tabButtonI{
         width: 8.5rem;
@@ -334,6 +344,7 @@ span{margin:0 5px 0 15px
 //Login4 ------------------------
 .login4{
     @import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+    
     $color: #DC6180;
     //$color: rgb(147, 147, 209);
     //$color: pink;
