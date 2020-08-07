@@ -738,7 +738,45 @@ $gray-light:  #f5f6f8;
         top: 30rem;
         right: 48rem;
     }
-    .authBox{
+    .triangle2{
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-left: 200px solid #a5aae4;
+        border-bottom: 150px solid transparent;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 26rem;
+        right: 60rem;
+        
+    }
+    .toggleButton1{
+        position: absolute;
+        top: 60vh;
+        right: 38vw;
+        height: 40px;
+        width: 5%;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        outline: 1px dashed transparent;
+    }
+    .toggleButton2{
+        position: absolute;
+        top: 60vh;
+        right: 57vw;
+        height: 40px;
+        width: 5%;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        outline: 1px dashed transparent;
+    }
+    .authBoxL{
         position: absolute;
         display: flex;
         justify-content: center;
@@ -749,13 +787,18 @@ $gray-light:  #f5f6f8;
         width: 15rem;
         padding: 2%;
         box-shadow: 1px 1px 5px black;
-        input{
+        transition: all 0.3s ease;
+        .inputs{
             height: 30px;
             margin-bottom: 1rem;
             padding-left: 6%;
             outline: 1px dashed transparent;
             border: 1px solid #5356AD;
         }
+        .inputNo{
+            display: none;
+        }
+        
         input:focus{
             
             border-bottom: 1px solid #FB72B2;
@@ -764,7 +807,7 @@ $gray-light:  #f5f6f8;
         }
         button{
             height: 40px;
-            width: 25%;
+            width: 35%;
             background: #FB72B2;
             border: none;
             color: #fff;
@@ -778,6 +821,51 @@ $gray-light:  #f5f6f8;
             
         }
 
+    }
+    .authBoxR{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 250px 0 0 160px;
+        background: #fff;
+        height: 20rem;
+        width: 15rem;
+        padding: 2%;
+        box-shadow: 1px 1px 5px black;
+        transition: all 0.3s ease;
+        .inputs{
+            height: 30px;
+            margin-bottom: 1rem;
+            padding-left: 6%;
+            outline: 1px dashed transparent;
+            border: 1px solid #5356AD;
+        }
+        .inputNo{
+            display: none;
+        }
+        
+        input:focus{
+            
+            border-bottom: 1px solid #FB72B2;
+            transform: scale(1.05);
+            
+        }
+        button{
+            height: 40px;
+            width: 35%;
+            background: #FB72B2;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            outline: 1px dashed transparent;
+            
+        }
+        button:active{
+            transform: translate(-3px,3px);
+            
+        }
     }
 }
 //end Login8 -----------------------------------------------------------------------------------------------------------------------------------------

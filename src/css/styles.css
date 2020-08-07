@@ -887,7 +887,45 @@ input, select {
     top: 30rem;
     right: 48rem;
   }
-  .login8 .authBox {
+  .login8 .triangle2 {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 200px solid #a5aae4;
+    border-bottom: 150px solid transparent;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    position: absolute;
+    top: 26rem;
+    right: 60rem;
+  }
+  .login8 .toggleButton1 {
+    position: absolute;
+    top: 60vh;
+    right: 38vw;
+    height: 40px;
+    width: 5%;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    outline: 1px dashed transparent;
+  }
+  .login8 .toggleButton2 {
+    position: absolute;
+    top: 60vh;
+    right: 57vw;
+    height: 40px;
+    width: 5%;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    outline: 1px dashed transparent;
+  }
+  .login8 .authBoxL {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -906,22 +944,27 @@ input, select {
     padding: 2%;
     -webkit-box-shadow: 1px 1px 5px black;
             box-shadow: 1px 1px 5px black;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
-  .login8 .authBox input {
+  .login8 .authBoxL .inputs {
     height: 30px;
     margin-bottom: 1rem;
     padding-left: 6%;
     outline: 1px dashed transparent;
     border: 1px solid #5356AD;
   }
-  .login8 .authBox input:focus {
+  .login8 .authBoxL .inputNo {
+    display: none;
+  }
+  .login8 .authBoxL input:focus {
     border-bottom: 1px solid #FB72B2;
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
-  .login8 .authBox button {
+  .login8 .authBoxL button {
     height: 40px;
-    width: 25%;
+    width: 35%;
     background: #FB72B2;
     border: none;
     color: #fff;
@@ -929,7 +972,58 @@ input, select {
     padding: 10px;
     outline: 1px dashed transparent;
   }
-  .login8 .authBox button:active {
+  .login8 .authBoxL button:active {
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
+  }
+  .login8 .authBoxR {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 250px 0 0 160px;
+    background: #fff;
+    height: 20rem;
+    width: 15rem;
+    padding: 2%;
+    -webkit-box-shadow: 1px 1px 5px black;
+            box-shadow: 1px 1px 5px black;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .login8 .authBoxR .inputs {
+    height: 30px;
+    margin-bottom: 1rem;
+    padding-left: 6%;
+    outline: 1px dashed transparent;
+    border: 1px solid #5356AD;
+  }
+  .login8 .authBoxR .inputNo {
+    display: none;
+  }
+  .login8 .authBoxR input:focus {
+    border-bottom: 1px solid #FB72B2;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .login8 .authBoxR button {
+    height: 40px;
+    width: 35%;
+    background: #FB72B2;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    outline: 1px dashed transparent;
+  }
+  .login8 .authBoxR button:active {
     -webkit-transform: translate(-3px, 3px);
             transform: translate(-3px, 3px);
   }
