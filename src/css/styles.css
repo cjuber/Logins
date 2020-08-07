@@ -564,12 +564,49 @@ input, select {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: -2;
+  }
+  .login5 .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 34vh;
+    z-index: 1;
+  }
+  .login5 .tabButtonA {
+    border: none;
+    width: 185px;
+    height: 50px;
+    background: -webkit-gradient(linear, left top, right top, from(#35c3c1), to(#00d6b7));
+    background: linear-gradient(to right, #35c3c1, #00d6b7);
+    margin: 0 15px 20px 15px;
+    -webkit-box-shadow: 3px 3px 15px black;
+            box-shadow: 3px 3px 15px black;
+    color: #f5f6f8;
+    outline: 1px dashed transparent;
+    border-top: 5px solid #8f8f8f;
+    font-size: 16px;
+  }
+  .login5 .tabButtonI {
+    border: none;
+    width: 185px;
+    height: 50px;
+    background: #626066;
+    margin: 0 15px 20px 15px;
+    -webkit-box-shadow: 3px 3px 15px black;
+            box-shadow: 3px 3px 15px black;
+    color: #f5f6f8;
+    outline: 1px dashed transparent;
+    border-top: 5px solid #00d6b7;
+    font-size: 16px;
+    cursor: pointer;
   }
   .login5 .authBox {
     width: 20vw;
     height: 25vh;
     margin-top: 25vh;
-    background: rgba(0, 0, 0, 0.15);
+    background: #626066;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -581,11 +618,15 @@ input, select {
     border-top: 3px solid #00d6b7;
     -webkit-box-shadow: 3px 3px 15px black;
             box-shadow: 3px 3px 15px black;
+    z-index: 2;
   }
-  .login5 .authBox input {
+  .login5 .authBox .inputs {
     height: 50px;
     margin-bottom: 1.5rem;
     font-size: 1rem;
+  }
+  .login5 .authBox .inputNo {
+    display: none;
   }
   .login5 .authBox input:focus {
     outline: none;

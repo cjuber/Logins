@@ -440,21 +440,62 @@ $gray-light:  #f5f6f8;
     height: 86.2vh;
     display: flex;
     justify-content: center;
+    z-index: -2;
+    .tabs{
+        display: flex;
+        position: absolute;
+        top: 34vh;
+        z-index: 1;
+        
+    }
+    .tabButtonA{
+        border: none;    
+        width: 185px;
+        height: 50px;
+        background: linear-gradient(to right, $green-dark, $green-light);
+        margin: 0 15px 20px 15px;
+        box-shadow: 3px 3px 15px black;
+        color: $gray-light;
+        outline: 1px dashed transparent;
+        border-top: 5px solid $gray;
+        font-size: 16px;
+    }
+   
+    .tabButtonI{
+        border: none;
+        width: 185px;
+        height: 50px;
+        background: #626066;
+        margin: 0 15px 20px 15px;
+        box-shadow: 3px 3px 15px black;
+        color: $gray-light;
+        outline: 1px dashed transparent;
+        border-top: 5px solid $green-light;
+        font-size: 16px;
+        cursor: pointer;
+    }
     .authBox{
         
         width: 20vw;
         height: 25vh;
         margin-top: 25vh;
-        background: rgba(black, .15);
+        background: #626066;
         display: flex;
         flex-direction: column;
         padding: 2%;
         border-top: 3px solid $green-light;
         box-shadow: 3px 3px 15px black;
-        input{
+        z-index: 2;
+       
+        
+
+        .inputs{
             height: 50px;
             margin-bottom: 1.5rem;
             font-size: 1rem;
+        }
+        .inputNo{
+            display: none;
         }
         input:focus{
             outline: none;
