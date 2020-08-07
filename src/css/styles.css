@@ -681,7 +681,10 @@ input, select {
     padding: 0 2% 0 2%;
     border-radius: 10px;
   }
-  .login6 .authBox input {
+  .login6 .authBox .inputNo {
+    display: none;
+  }
+  .login6 .authBox .inputs {
     margin-bottom: 15px;
     background: #757B94;
     border: none;
@@ -692,7 +695,10 @@ input, select {
   .login6 .authBox input:focus, .login6 .authBox :hover {
     border-bottom: 2px solid #1059FF;
   }
-  .login6 .authBox label {
+  .login6 .authBox .labelT {
+    display: none;
+  }
+  .login6 .authBox .labelF {
     font-size: 14px;
     font-weight: 400;
     color: #e0dddd;
@@ -720,25 +726,41 @@ input, select {
     -webkit-transform: translate(-3px, 3px);
             transform: translate(-3px, 3px);
   }
-  .login6 .authBox .toggle {
+  .login6 .authBox .tabs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border: none;
   }
-  .login6 .authBox .toggle h1 {
+  .login6 .authBox .tabs .tabButtonA {
+    background: none;
+    border-radius: 0;
     font-size: 20px;
     font-weight: 400;
     margin: 80px 40px 50px 0;
     padding-bottom: 10px;
     color: #e0dddd;
     border-bottom: 2px solid #1059FF;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
-  .login6 .authBox .toggle .inactive {
+  .login6 .authBox .tabs .tabButtonI {
+    margin: 80px 40px 50px 0;
+    background: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 0;
     color: #a8a6a6;
     border: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+    -webkit-transform: none;
+            transform: none;
   }
-  .login6 .authBox a {
+  .login6 .authBox .aT {
+    display: none;
+  }
+  .login6 .authBox .aF {
     height: 100px;
     width: 80%;
     margin-left: auto;
